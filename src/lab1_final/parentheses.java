@@ -14,10 +14,14 @@ public class parentheses {
 		Expr my=null;
 
 		boolean exist=false;
-		
 		String prompt;                                                   //the prompt message
+		
 		Scanner input = new Scanner(System.in) ;                         //input
+		
 		String line = input.nextLine();                                  //read input
+		
+		System.out.println("Testing! Please input something¡­¡­Enter ¡°END¡± to stop.");
+		
                                                  
 		while(!("END".equals(line)))                                     //loop until "END"
 		{
@@ -387,7 +391,7 @@ class Expr{
 		{
 			for(int i = 0; i<temp.length();i++)
 			{
-				if ("abcdefghijklmnopqrstuvwxyz1234567890+-*^.".indexOf(temp.charAt(i))==-1)
+				if ("abcdefghijklmnopqrstuvwxyz1234567890+-*^.".indexOf(temp.charAt(i))==-1)     
 				{
 					System.out.println("no " + temp.charAt(i) + "is allowed!");
 					throw new Exception();
