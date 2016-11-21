@@ -586,6 +586,8 @@ class Expr{
 					it.remove();
 				}
 
+			} else if (factors.size() > 1) {
+				it.remove();
 			}
 		}
 		return found ? toString()  : "Error! Variable not found.";
